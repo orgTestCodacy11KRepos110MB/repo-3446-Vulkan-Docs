@@ -47,7 +47,7 @@ displayed to the user on a periodic basis. This period may be fixed (Fixed
 Refresh Rate, FRR) or variable (Variable Refresh Rate, VRR).
 
 ifdef::VK_EXT_present_timing[]
-[open,refpage='VkSwapchainPresentTimingCreateInfoEXT',desc='Specify present timing properties to initialize a swapchain with']
+[open,refpage='VkSwapchainPresentTimingCreateInfoEXT',desc='Specify present timing properties to initialize a swapchain with',type='structs']
 --
 To enable present timing collection for a swapchain, add a
 sname:VkSwapchainPresentTimingCreateInfoEXT structure to the pname:pNext chain
@@ -66,7 +66,7 @@ include::{generated}/api/structs/VkSwapchainPresentTimingCreateInfoEXT.adoc[]
 include::{generated}/validity/structs/VkSwapchainPresentTimingCreateInfoEXT.adoc[]
 --
 
-[open,refpage='vkGetSwapchainTimingPropertiesEXT',desc='Obtain the display timing properties of the PE\'s display',type='protos']
+[open,refpage='vkGetSwapchainTimingPropertiesEXT',desc='Obtain the display timing properties of the PE\'s display',type='protos',type='protos']
 --
 
 To query the presentation engine's timing properties for a given swapchain,
@@ -436,6 +436,7 @@ It is also possible that an event can cause only
 pname:timingPropertiesChanged to become ename:VK_TRUE.
 ====
 
+--
 endif::VK_EXT_present_timing[]
 
 ifdef::VK_GOOGLE_display_timing[]
